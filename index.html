@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alliance Rurale est une organisation agricole basée à Toulouse. Nous représentons et accompagnons les acteurs du monde rural en Haute-Garonne.">
+  <meta name="keywords" content="agriculture Toulouse, organisation agricole, Haute-Garonne, monde rural, représentation agriculteurs, Alliance Rurale">
+  <meta name="author" content="Alliance Rurale">
+  <meta property="og:title" content="Alliance Rurale — Organisation Agricole à Toulouse">
+  <meta property="og:description" content="Représentation, accompagnement et développement du monde rural en Haute-Garonne.">
+  <meta property="og:type" content="website">
+  <title>Alliance Rurale — Organisation Agricole à Toulouse</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#accueil" class="nav-logo" aria-label="Alliance Rurale — Retour à l'accueil">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12 12-5.373 12-12S20.627 2 14 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M14 8v6M14 14l4 4M14 14l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M8 12c0 0 2-4 6-4s6 4 6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-main">Alliance Rurale</span>
+          <span class="logo-sub">Toulouse</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#accueil" class="nav-link">Accueil</a></li>
+        <li><a href="#a-propos" class="nav-link">À propos</a></li>
+        <li><a href="#actions" class="nav-link">Nos actions</a></li>
+        <li><a href="#actualites" class="nav-link">Actualités</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="accueil" class="hero" aria-label="Présentation Alliance Rurale">
+      <div class="hero-image" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80"
+          alt=""
+          loading="eager"
+          width="1920"
+          height="1080"
+          class="hero-bg"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-badge">Organisation agricole · Haute-Garonne</div>
+        <h1 class="hero-title">
+          <span class="hero-line-wrap"><span class="hero-line">Le territoire,</span></span>
+          <span class="hero-line-wrap"><em class="hero-line">au cœur de chaque décision.</em></span>
+        </h1>
+        <p class="hero-description">
+          Alliance Rurale rassemble et défend les acteurs du monde agricole en Haute-Garonne.
+          Nous portons leurs intérêts auprès des institutions, accompagnons les exploitants
+          dans leurs démarches et contribuons au développement durable du territoire.
+        </p>
+        <div class="hero-actions">
+          <a href="#actions" class="btn btn--primary">Découvrir nos actions</a>
+          <a href="#contact" class="btn btn--ghost">Nous contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Défiler</span>
+      </div>
+    </section>
+
+    <!-- ===== CHIFFRES / ANCRAGE ===== -->
+    <section class="strip" aria-label="Chiffres clés">
+      <div class="container">
+        <div class="strip-grid">
+          <div class="strip-item">
+            <span class="strip-number">24<small>h</small>/24</span>
+            <span class="strip-label">Disponibilité</span>
+          </div>
+          <div class="strip-divider" aria-hidden="true"></div>
+          <div class="strip-item">
+            <span class="strip-number">Toulouse</span>
+            <span class="strip-label">109 avenue de Lespinet</span>
+          </div>
+          <div class="strip-divider" aria-hidden="true"></div>
+          <div class="strip-item">
+            <span class="strip-number">Haute-Garonne</span>
+            <span class="strip-label">Territoire d'intervention</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="a-propos" class="about section" aria-label="À propos d'Alliance Rurale">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap reveal">
+            <div class="about-image">
+              <div class="about-image-overlay" aria-hidden="true"></div>
+              <img
+                src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80"
+                alt="Paysage agricole de la région toulousaine"
+                loading="lazy"
+                width="900"
+                height="620"
+              >
+            </div>
+            <div class="about-image-caption">Plaine du Lauragais — Haute-Garonne</div>
+          </div>
+
+          <div class="about-content">
+            <div class="section-label reveal">Notre organisation</div>
+            <h2 class="section-title reveal reveal--delay-1">
+              Une présence de terrain,<br>une voix portée plus haut.
+            </h2>
+            <p class="about-text reveal reveal--delay-2">
+              Alliance Rurale est née d'un constat simple : les agriculteurs de la région
+              toulousaine avaient besoin d'une structure à leur mesure, capable de les
+              représenter sans détour auprès des instances décisionnaires tout en restant
+              à leur côté au quotidien.
+            </p>
+            <p class="about-text reveal reveal--delay-2">
+              Implantée à Toulouse depuis sa création, notre organisation intervient sur
+              l'ensemble de la Haute-Garonne. Nous travaillons directement avec les
+              exploitants, les communes rurales et les acteurs institutionnels pour
+              construire des réponses adaptées aux réalités du terrain.
+            </p>
+            <p class="about-text reveal reveal--delay-2">
+              Notre indépendance est notre principal atout. Elle nous permet de
+              défendre les positions des agriculteurs avec clarté, sans compromis
+              né de conflits d'intérêts, et de nouer des partenariats équilibrés
+              avec l'ensemble des parties prenantes du monde rural.
+            </p>
+
+            <div class="about-values reveal reveal--delay-3">
+              <div class="value-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                Indépendant
+              </div>
+              <div class="value-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                Non-partisan
+              </div>
+              <div class="value-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+                </svg>
+                Disponible 24h/24
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MISSION & VISION ===== -->
+    <section class="mission section" aria-label="Mission et engagements">
+      <div class="container">
+        <div class="mission-header">
+          <div class="section-label reveal">Notre raison d'être</div>
+          <h2 class="section-title reveal reveal--delay-1">
+            Trois engagements,<br>un seul territoire.
+          </h2>
+        </div>
+
+        <div class="mission-grid">
+          <div class="mission-card reveal">
+            <div class="mission-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="mission-title">Ancrage territorial</h3>
+            <p class="mission-text">
+              Nous sommes présents là où les décisions se prennent et là où elles
+              s'appliquent. Notre connaissance fine du territoire nous permet d'agir
+              avec précision, en tenant compte des spécificités locales de chaque
+              exploitation et de chaque commune.
+            </p>
+          </div>
+
+          <div class="mission-card reveal reveal--delay-1">
+            <div class="mission-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22c-4.97 0-9-3.582-9-8 0-3.314 2.686-6 6-6 .732 0 1.434.132 2.08.374A5.99 5.99 0 0 1 15 6c3.314 0 6 2.686 6 6 0 4.418-4.03 8-9 8z"/>
+                <path d="M12 8V4M8 8V5M16 8V5"/>
+              </svg>
+            </div>
+            <h3 class="mission-title">Agriculture durable</h3>
+            <p class="mission-text">
+              Nous ne posons pas la question de la durabilité contre celle de la
+              viabilité économique. Nous travaillons à réconcilier les deux, en
+              soutenant des pratiques agricoles qui permettent aux exploitations
+              de traverser les décennies sans sacrifier leur rentabilité.
+            </p>
+          </div>
+
+          <div class="mission-card reveal reveal--delay-2">
+            <div class="mission-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="mission-title">Représentation directe</h3>
+            <p class="mission-text">
+              En commission départementale, en dialogue avec la préfecture ou
+              devant les élus locaux, nous portons les positions des agriculteurs
+              avec clarté. Pas de langage de bois : des arguments construits à
+              partir de la réalité du terrain.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACTIONS / SERVICES ===== -->
+    <section id="actions" class="services section" aria-label="Nos actions et services">
+      <div class="container">
+        <div class="services-header">
+          <div class="section-label reveal">Ce que nous faisons</div>
+          <h2 class="section-title reveal reveal--delay-1">
+            Un accompagnement concret,<br>à chaque étape.
+          </h2>
+          <p class="services-intro reveal reveal--delay-2">
+            Nos actions couvrent l'ensemble du cycle de vie d'une exploitation agricole,
+            de l'installation jusqu'à la transmission, en passant par les moments
+            de crise administrative, climatique ou économique.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <div class="service-number" aria-hidden="true">01</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Accompagnement des exploitants</h3>
+            <p class="service-text">
+              Déclarations PAC, demandes d'aides agricoles, contentieux fonciers,
+              transmission d'exploitation — nous accompagnons les agriculteurs dans
+              leurs démarches administratives et juridiques pour leur permettre de
+              se concentrer sur ce qu'ils font le mieux.
+            </p>
+            <ul class="service-list" role="list">
+              <li>Suivi des dossiers PAC et aides européennes</li>
+              <li>Appui juridique lors de litiges fonciers</li>
+              <li>Conseil pour la transmission et la reprise d'exploitation</li>
+              <li>Orientation vers les dispositifs d'urgence agricole</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal reveal--delay-1">
+            <div class="service-number" aria-hidden="true">02</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Représentation institutionnelle</h3>
+            <p class="service-text">
+              Nous siégeons dans les instances où se décide l'avenir du monde rural :
+              commissions départementales, groupes de travail interministériels,
+              concertations avec les collectivités. La voix des agriculteurs de
+              Haute-Garonne est portée avec méthode et constance.
+            </p>
+            <ul class="service-list" role="list">
+              <li>Participation aux commissions départementales agricoles</li>
+              <li>Dialogue avec les élus locaux et la préfecture</li>
+              <li>Suivi des politiques agricoles régionales et nationales</li>
+              <li>Coordination avec les chambres d'agriculture</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal reveal--delay-2">
+            <div class="service-number" aria-hidden="true">03</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12h18M3 6h18M3 18h18"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Développement du territoire rural</h3>
+            <p class="service-text">
+              Le développement rural ne se résume pas aux seules exploitations.
+              Nous animons des réseaux d'entraide entre agriculteurs, soutenons
+              les initiatives de circuits courts et participons à la valorisation
+              du patrimoine agricole local.
+            </p>
+            <ul class="service-list" role="list">
+              <li>Animation de réseaux d'entraide entre exploitations</li>
+              <li>Soutien aux projets de circuits courts et vente directe</li>
+              <li>Participation aux contrats de développement rural</li>
+              <li>Valorisation des savoir-faire agricoles régionaux</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACTUALITÉS ===== -->
+    <section id="actualites" class="news section" aria-label="Actualités et initiatives">
+      <div class="container">
+        <div class="news-header">
+          <div class="section-label reveal">Actualités</div>
+          <h2 class="section-title reveal reveal--delay-1">
+            Ce qui se passe<br>sur le terrain.
+          </h2>
+        </div>
+
+        <div class="news-grid">
+
+          <article class="news-card news-card--featured reveal">
+            <div class="news-image">
+              <img
+                src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=800&q=80"
+                alt="Champ de céréales en Haute-Garonne lors de la moisson 2024"
+                loading="lazy"
+                width="800"
+                height="500"
+              >
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="news-category">Conjoncture</span>
+                <time datetime="2024-09-12" class="news-date">12 septembre 2024</time>
+              </div>
+              <h3 class="news-title">
+                Moisson 2024 en Haute-Garonne : une campagne contrastée selon les zones
+              </h3>
+              <p class="news-excerpt">
+                La sécheresse printanière a pesé sur les rendements en céréales dans la
+                plaine lauragaise, tandis que les exploitations irriguées du nord du
+                département ont tiré leur épingle du jeu. Alliance Rurale a transmis
+                une synthèse aux services de l'État pour orienter l'activation des
+                dispositifs de soutien.
+              </p>
+              <a href="#actualites" class="news-link" aria-label="Lire l'article complet sur la moisson 2024">
+                Lire la suite
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card reveal reveal--delay-1">
+            <div class="news-image">
+              <img
+                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80"
+                alt="Réunion de travail sur l'agrivoltaïsme avec des agriculteurs"
+                loading="lazy"
+                width="600"
+                height="400"
+              >
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="news-category">Énergie</span>
+                <time datetime="2024-07-03" class="news-date">3 juillet 2024</time>
+              </div>
+              <h3 class="news-title">
+                Agrivoltaïsme : nos positions portées devant la commission départementale
+              </h3>
+              <p class="news-excerpt">
+                Lors de la réunion du 27 juin, nous avons défendu une doctrine
+                d'implantation stricte des panneaux solaires en milieu agricole,
+                pour que le foncier reste d'abord au service de la production alimentaire.
+              </p>
+              <a href="#actualites" class="news-link" aria-label="Lire l'article sur l'agrivoltaïsme">
+                Lire la suite
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card reveal reveal--delay-2">
+            <div class="news-image">
+              <img
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80"
+                alt="Journée de terrain avec des exploitants agricoles"
+                loading="lazy"
+                width="600"
+                height="400"
+              >
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="news-category">Événement</span>
+                <time datetime="2024-03-15" class="news-date">15 mars 2024</time>
+              </div>
+              <h3 class="news-title">
+                Journée terrain : rotation des cultures et gestion des intrants
+              </h3>
+              <p class="news-excerpt">
+                Une vingtaine d'exploitants de la région se sont retrouvés pour
+                échanger sur leurs pratiques de rotation des cultures. Une journée
+                concrète, sans discours, qui a abouti à la mise en place d'un
+                groupe de suivi trimestriel.
+              </p>
+              <a href="#actualites" class="news-link" aria-label="Lire l'article sur la journée terrain">
+                Lire la suite
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section" aria-label="Contact et coordonnées">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <div class="section-label reveal">Nous joindre</div>
+            <h2 class="section-title reveal reveal--delay-1">
+              Une question ?<br>Nous sommes disponibles.
+            </h2>
+            <p class="contact-intro reveal reveal--delay-2">
+              Que vous soyez exploitant, élu local, partenaire institutionnel
+              ou simplement curieux de nos activités, n'hésitez pas à nous
+              contacter. Nous répondons à toutes les sollicitations.
+            </p>
+
+            <address class="contact-details reveal reveal--delay-3">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Adresse</span>
+                  <span class="contact-value">109 Avenue de Lespinet<br>31400 Toulouse</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.4a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Téléphone</span>
+                  <a href="tel:+33645440397" class="contact-value contact-value--link">06 45 44 03 97</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Disponibilité</span>
+                  <span class="contact-value">Ouvert 24h/24, 7j/7</span>
+                </div>
+              </div>
+            </address>
+
+            <div class="contact-map reveal reveal--delay-4">
+              <iframe
+                src="https://maps.google.com/maps?q=109+Avenue+de+Lespinet,+31400+Toulouse&output=embed&z=15"
+                width="100%"
+                height="280"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localisation Alliance Rurale — 109 Avenue de Lespinet, 31400 Toulouse"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal reveal--delay-2">
+            <form class="contact-form" id="contact-form" novalidate>
+              <h3 class="form-title">Envoyer un message</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="field-name" class="form-label">Nom complet <span class="required" aria-label="requis">*</span></label>
+                  <input
+                    type="text"
+                    id="field-name"
+                    name="name"
+                    class="form-input"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    placeholder="Jean Dupont"
+                  >
+                  <span class="form-error" id="error-name" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="field-email" class="form-label">Adresse email <span class="required" aria-label="requis">*</span></label>
+                  <input
+                    type="email"
+                    id="field-email"
+                    name="email"
+                    class="form-input"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    placeholder="jean.dupont@exemple.fr"
+                  >
+                  <span class="form-error" id="error-email" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="field-subject" class="form-label">Objet</label>
+                <select id="field-subject" name="subject" class="form-input form-select">
+                  <option value="">Sélectionner un objet</option>
+                  <option value="accompagnement">Accompagnement administratif</option>
+                  <option value="representation">Représentation institutionnelle</option>
+                  <option value="territoire">Développement territorial</option>
+                  <option value="partenariat">Partenariat ou convention</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="field-message" class="form-label">Message <span class="required" aria-label="requis">*</span></label>
+                <textarea
+                  id="field-message"
+                  name="message"
+                  class="form-input form-textarea"
+                  rows="5"
+                  required
+                  aria-required="true"
+                  placeholder="Décrivez votre situation ou votre question..."
+                ></textarea>
+                <span class="form-error" id="error-message" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                <span class="btn-text">Envoyer le message</span>
+                <span class="btn-loader" aria-hidden="true"></span>
+              </button>
+
+              <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Message envoyé. Nous vous répondrons dans les plus brefs délais.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#accueil" class="footer-logo" aria-label="Alliance Rurale — Retour en haut">
+            Alliance Rurale
+          </a>
+          <p class="footer-tagline">
+            Organisation agricole indépendante<br>Haute-Garonne — Toulouse
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigation secondaire">
+          <span class="footer-nav-title">Navigation</span>
+          <ul role="list">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#actions">Nos actions</a></li>
+            <li><a href="#actualites">Actualités</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <span class="footer-nav-title">Contact</span>
+          <address>
+            <p>109 Avenue de Lespinet<br>31400 Toulouse</p>
+            <p><a href="tel:+33645440397">06 45 44 03 97</a></p>
+            <p>Disponible 24h/24</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">
+          &copy; <span id="current-year"></span> Alliance Rurale. Tous droits réservés.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
