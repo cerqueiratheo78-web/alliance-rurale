@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alliance Rurale est une organisation agricole basée à Toulouse. Nous représentons et accompagnons les acteurs du monde rural en Haute-Garonne.">
+  <meta name="keywords" content="agriculture Toulouse, organisation agricole, Haute-Garonne, monde rural, représentation agriculteurs, Alliance Rurale">
+  <meta name="author" content="Alliance Rurale">
+  <meta property="og:title" content="Alliance Rurale — Organisation Agricole à Toulouse">
+  <meta property="og:description" content="Représentation, accompagnement et développement du monde rural en Haute-Garonne.">
+  <meta property="og:type" content="website">
+  <title>Alliance Rurale — Organisation Agricole à Toulouse</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+/* ============================================
+   ALLIANCE RURALE — Stylesheet
+   Design: Institutional · Agricultural · French
+   ============================================ */
+
+:root {
+  --green-900: #0D2419;
+  --green-800: #162E22;
+  --green-700: #1E3A2F;
+  --green-600: #27503F;
+  --green-500: #336650;
+  --green-400: #4A8870;
+  --green-300: #7AAF9A;
+  --green-100: #D6EAE2;
+  --green-50:  #EEF6F2;
+  --beige-900: #7A6545;
+  --beige-700: #9E8155;
+  --beige-500: #C4A87A;
+  --beige-300: #DECCAA;
+  --beige-200: #EAD9BE;
+  --beige-100: #F2E9D8;
+  --beige-50:  #FAF6EF;
+  --white:     #FFFFFF;
+  --black:     #0F0F0F;
+  --text:      #1C1C1C;
+  --text-mid:  #484848;
+  --text-soft: #787878;
+  --border:    #E2D9C8;
+  --border-light: #EDE8DF;
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+  --text-7xl:  4.5rem;
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
+  --container-max: 1200px;
+  --container-pad: 1.5rem;
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  20px;
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+  --shadow-md:  0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.05);
+  --shadow-lg:  0 12px 32px rgba(0,0,0,.10), 0 4px 8px rgba(0,0,0,.06);
+  --shadow-xl:  0 24px 48px rgba(0,0,0,.12), 0 8px 16px rgba(0,0,0,.08);
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+  --nav-height: 72px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--text);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+address { font-style: normal; }
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-4);
+  padding: var(--space-3) var(--space-6);
+  background: var(--green-700);
+  color: var(--white);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  z-index: 9999;
+  transition: top var(--transition-fast);
+}
+.skip-link:focus { top: var(--space-4); }
+
+:focus-visible { outline: 2.5px solid var(--green-500); outline-offset: 3px; border-radius: var(--radius-sm); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+
+.container { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-pad); }
+.section { padding: var(--space-24) 0; }
+@media (max-width: 768px) { .section { padding: var(--space-16) 0; } }
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green-500);
+  margin-bottom: var(--space-4);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--green-800);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-6);
+}
+.section-title em { font-style: italic; color: var(--green-600); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.875rem 1.75rem;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-base), color var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-base);
+  white-space: nowrap;
+  min-height: 44px;
+}
+.btn:active { transform: scale(0.98); }
+.btn--primary { background-color: var(--green-700); color: var(--white); }
+.btn--primary:hover { background-color: var(--green-600); box-shadow: var(--shadow-md); }
+.btn--ghost { background-color: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.5); }
+.btn--ghost:hover { background-color: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.8); }
+.btn--full { width: 100%; justify-content: center; }
+.btn--outline { background-color: transparent; color: var(--green-700); border: 1.5px solid var(--green-700); }
+.btn--outline:hover { background-color: var(--green-700); color: var(--white); }
+.btn-loader { display: none; width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: var(--white); border-radius: 50%; animation: spin 0.7s linear infinite; }
+.btn.loading .btn-text { display: none; }
+.btn.loading .btn-loader { display: block; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.reveal { opacity: 0; transform: translateY(28px); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); transition: opacity 0.7s ease, transform 0.7s ease; }
+
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--nav-height);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base);
+}
+.site-header.scrolled {
+  background-color: rgba(255,252,248,0.97);
+  box-shadow: 0 1px 0 var(--border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.nav-container {
+  max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-pad);
+  height: 100%; display: flex; align-items: center; justify-content: space-between; gap: var(--space-8);
+}
+.nav-logo { display: flex; align-items: center; gap: var(--space-3); flex-shrink: 0; transition: opacity 0.2s ease; }
+.nav-logo:hover { opacity: 0.85; }
+.logo-mark { color: var(--white); transition: color var(--transition-base); display: flex; align-items: center; }
+.site-header.scrolled .logo-mark { color: var(--green-700); }
+.logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+.logo-main { font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 600; color: var(--white); letter-spacing: -0.01em; transition: color var(--transition-base); }
+.logo-sub { font-family: var(--font-body); font-size: var(--text-xs); font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.65); transition: color var(--transition-base); }
+.site-header.scrolled .logo-main { color: var(--green-800); }
+.site-header.scrolled .logo-sub  { color: var(--text-soft); }
+
+.nav-menu { display: flex; align-items: center; gap: var(--space-1); }
+.nav-link {
+  position: relative;
+  font-size: var(--text-sm); font-weight: 400; color: rgba(255,255,255,0.85);
+  padding: var(--space-2) var(--space-4); border-radius: var(--radius-md);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  min-height: 44px; display: flex; align-items: center;
+}
+.nav-link:hover { color: var(--white); background-color: rgba(255,255,255,0.1); }
+.site-header.scrolled .nav-link { color: var(--text-mid); }
+.site-header.scrolled .nav-link:hover { color: var(--green-700); background-color: var(--green-50); }
+.nav-link--cta { background-color: var(--white); color: var(--green-700) !important; font-weight: 500; margin-left: var(--space-2); }
+.nav-link--cta:hover { background-color: var(--beige-100) !important; color: var(--green-800) !important; }
+.site-header.scrolled .nav-link--cta { background-color: var(--green-700); color: var(--white) !important; }
+.site-header.scrolled .nav-link--cta:hover { background-color: var(--green-600) !important; color: var(--white) !important; }
+
+.site-header.scrolled .nav-link:not(.nav-link--cta)::after {
+  content: '';
+  position: absolute; bottom: 7px; left: 50%;
+  width: calc(100% - 32px); height: 1px;
+  background-color: var(--green-500);
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-header.scrolled .nav-link:not(.nav-link--cta):hover::after,
+.site-header.scrolled .nav-link.is-active:not(.nav-link--cta)::after { transform: translateX(-50%) scaleX(1); }
+
+.nav-toggle {
+  display: none; flex-direction: column; justify-content: center; gap: 5px;
+  width: 44px; height: 44px; background: none; border: none; cursor: pointer;
+  padding: var(--space-2); border-radius: var(--radius-md);
+}
+.toggle-bar {
+  display: block; width: 24px; height: 1.5px; background-color: var(--white);
+  border-radius: 2px;
+  transition: transform var(--transition-base), opacity var(--transition-base), background-color var(--transition-base);
+}
+.site-header.scrolled .toggle-bar { background-color: var(--text); }
+.nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+@media (max-width: 900px) {
+  .nav-toggle { display: flex; }
+  .nav-menu {
+    position: fixed; top: var(--nav-height); left: 0; right: 0; bottom: 0;
+    flex-direction: column; align-items: stretch; gap: 0; padding: var(--space-6);
+    background-color: var(--beige-50); border-top: 1px solid var(--border);
+    transform: translateX(100%); transition: transform var(--transition-slow); overflow-y: auto;
+  }
+  .nav-menu.is-open { transform: translateX(0); }
+  .nav-link { color: var(--text-mid) !important; font-size: var(--text-lg); padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--border-light); min-height: 56px; }
+  .nav-link:hover { color: var(--green-700) !important; background-color: var(--green-50) !important; }
+  .nav-link--cta { margin-left: 0; margin-top: var(--space-4); background-color: var(--green-700) !important; color: var(--white) !important; border-radius: var(--radius-md); text-align: center; justify-content: center; border-bottom: none !important; }
+}
+
+.hero { position: relative; min-height: 100svh; display: flex; align-items: center; overflow: hidden; }
+.hero-image { position: absolute; inset: 0; z-index: 0; }
+.hero-bg { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(13,36,25,0.80) 0%, rgba(13,36,25,0.60) 50%, rgba(13,36,25,0.30) 100%);
+}
+.hero-content { position: relative; z-index: 1; padding-top: calc(var(--nav-height) + var(--space-12)); padding-bottom: var(--space-24); max-width: 780px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-size: var(--text-xs); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.75); border: 1px solid rgba(255,255,255,0.25);
+  padding: var(--space-2) var(--space-4); border-radius: 100px; margin-bottom: var(--space-8);
+}
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, var(--text-7xl));
+  font-weight: 500; line-height: 1.1; color: var(--white); letter-spacing: -0.02em; margin-bottom: var(--space-8);
+}
+.hero-title em { font-style: italic; color: var(--beige-300); }
+.hero-line-wrap { display: block; overflow: hidden; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+.hero-line { display: block; }
+.hero-description { font-size: var(--text-lg); line-height: 1.75; color: rgba(255,255,255,0.82); max-width: 580px; margin-bottom: var(--space-10); font-weight: 300; }
+.hero-actions { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+.hero-scroll-indicator {
+  position: absolute; bottom: var(--space-10); left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-3);
+  color: rgba(255,255,255,0.5); font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; z-index: 1;
+  transition: opacity 0.4s ease;
+}
+.scroll-line { width: 1px; height: 48px; background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0)); animation: scroll-pulse 2s ease-in-out infinite; }
+@keyframes scroll-pulse { 0%, 100% { opacity: 0.4; transform: scaleY(1); } 50% { opacity: 1; transform: scaleY(1.1); } }
+
+.strip { background-color: var(--green-700); padding: var(--space-10) 0; }
+.strip-grid { display: flex; align-items: center; justify-content: center; gap: var(--space-12); flex-wrap: wrap; }
+.strip-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-1); }
+.strip-number { font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--white); line-height: 1; }
+.strip-number small { font-size: 0.65em; font-weight: 400; }
+.strip-label { font-size: var(--text-xs); font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+.strip-divider { width: 1px; height: 40px; background-color: rgba(255,255,255,0.15); flex-shrink: 0; }
+@media (max-width: 600px) { .strip-divider { display: none; } .strip-grid { gap: var(--space-8); } }
+
+.about { background-color: var(--beige-50); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-20); align-items: center; }
+.about-image-wrap { position: relative; }
+.about-image { position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); }
+.about-image img { width: 100%; height: 520px; object-fit: cover; display: block; transition: transform 0.6s ease; }
+.about-image:hover img { transform: scale(1.02); }
+.about-image-caption { font-size: var(--text-xs); color: var(--text-soft); letter-spacing: 0.06em; margin-top: var(--space-3); text-align: center; text-transform: uppercase; }
+.about-image-overlay { position: absolute; inset: 0; background-color: var(--beige-50); z-index: 2; border-radius: inherit; pointer-events: none; transform-origin: right center; }
+.about-text { color: var(--text-mid); line-height: 1.8; margin-bottom: var(--space-5); }
+.about-text:last-of-type { margin-bottom: var(--space-8); }
+.about-values { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.value-pill {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  padding: var(--space-2) var(--space-4); background-color: var(--green-50); color: var(--green-700);
+  border: 1px solid var(--green-100); border-radius: 100px; font-size: var(--text-sm); font-weight: 500;
+  transition: background-color 0.25s ease, transform 0.25s ease, border-color 0.25s ease; cursor: default;
+}
+.value-pill:hover { background-color: var(--green-100); border-color: var(--green-300); transform: translateY(-2px); }
+@media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; gap: var(--space-12); } .about-image img { height: 340px; } }
+
+.mission { background-color: var(--white); }
+.mission-header { text-align: center; max-width: 600px; margin: 0 auto var(--space-16); }
+.mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
+.mission-card {
+  position: relative;
+  padding: var(--space-10) var(--space-8); border: 1px solid var(--border-light); border-radius: var(--radius-lg);
+  background-color: var(--white); transition: box-shadow var(--transition-base), transform var(--transition-base), border-color var(--transition-base);
+}
+.mission-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: var(--green-100); }
+.mission-card::after {
+  content: ''; position: absolute; left: 0; top: 20%; bottom: 20%; width: 2px;
+  background-color: var(--green-400); border-radius: 2px; opacity: 0; transform: scaleY(0.4);
+  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mission-card:hover::after { opacity: 1; transform: scaleY(1); }
+.mission-icon {
+  width: 60px; height: 60px; background-color: var(--green-50); border-radius: var(--radius-lg);
+  display: flex; align-items: center; justify-content: center; color: var(--green-600); margin-bottom: var(--space-6);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mission-card:hover .mission-icon { background-color: var(--green-700); color: var(--white); transform: scale(1.06); }
+.mission-title { font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 500; color: var(--green-800); margin-bottom: var(--space-4); line-height: 1.3; }
+.mission-text { font-size: var(--text-base); color: var(--text-mid); line-height: 1.75; }
+@media (max-width: 900px) { .mission-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+
+.services { background-color: var(--green-900); }
+.services .section-label { color: var(--beige-300); }
+.services .section-title { color: var(--white); }
+.services-header { max-width: 680px; margin-bottom: var(--space-16); }
+.services-intro { font-size: var(--text-lg); color: rgba(255,255,255,0.65); line-height: 1.75; font-weight: 300; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+.service-card {
+  position: relative; padding: var(--space-10) var(--space-8);
+  background-color: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg); overflow: hidden;
+  transition: background-color var(--transition-base), border-color var(--transition-base), transform var(--transition-base);
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(to right, var(--beige-500), transparent); opacity: 0; transition: opacity var(--transition-base);
+}
+.service-card:hover { background-color: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.14); transform: translateY(-4px); }
+.service-card:hover::before { opacity: 1; }
+.service-card::after {
+  content: ''; position: absolute; inset: -1px; border-radius: inherit;
+  border: 1px solid rgba(255,255,255,0.18); opacity: 0; transition: opacity 0.35s ease; pointer-events: none;
+}
+.service-card:hover::after { opacity: 1; }
+.service-number { font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 600; color: rgba(255,255,255,0.06); position: absolute; top: var(--space-6); right: var(--space-8); line-height: 1; user-select: none; }
+.service-icon { color: var(--beige-300); margin-bottom: var(--space-6); transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease; }
+.service-card:hover .service-icon { transform: translateY(-3px); color: var(--beige-200); }
+.service-title { font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 500; color: var(--white); margin-bottom: var(--space-4); line-height: 1.3; }
+.service-text { font-size: var(--text-sm); color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: var(--space-6); }
+.service-list { display: flex; flex-direction: column; gap: var(--space-2); }
+.service-list li { font-size: var(--text-sm); color: rgba(255,255,255,0.55); padding-left: var(--space-4); position: relative; line-height: 1.5; }
+.service-list li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 5px; height: 1px; background-color: var(--beige-500); }
+@media (max-width: 1024px) { .services-grid { grid-template-columns: 1fr; max-width: 600px; } }
+
+.news { background-color: var(--beige-50); }
+.news-header { max-width: 560px; margin-bottom: var(--space-16); }
+.news-grid { display: grid; grid-template-columns: 1.4fr 1fr; grid-template-rows: auto auto; gap: var(--space-6); }
+.news-card {
+  background-color: var(--white); border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: var(--shadow-sm); border: 1px solid var(--border-light); display: flex; flex-direction: column;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+.news-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.news-card--featured { grid-row: 1 / 3; }
+.news-image { overflow: hidden; flex-shrink: 0; }
+.news-image img { width: 100%; height: 260px; object-fit: cover; transition: transform 0.5s ease; }
+.news-card--featured .news-image img { height: 300px; }
+.news-card:hover .news-image img { transform: scale(1.04); }
+.news-body { padding: var(--space-6) var(--space-7); display: flex; flex-direction: column; flex: 1; }
+.news-meta { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4); }
+.news-category { font-size: var(--text-xs); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--green-600); background-color: var(--green-50); padding: 3px 10px; border-radius: 100px; border: 1px solid var(--green-100); }
+.news-date { font-size: var(--text-xs); color: var(--text-soft); letter-spacing: 0.03em; }
+.news-title { font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 500; line-height: 1.3; color: var(--green-800); margin-bottom: var(--space-4); flex: 1; }
+.news-card--featured .news-title { font-size: var(--text-2xl); }
+.news-excerpt { font-size: var(--text-sm); color: var(--text-mid); line-height: 1.75; margin-bottom: var(--space-6); }
+.news-link { display: inline-flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); font-weight: 500; color: var(--green-600); transition: gap var(--transition-fast), color var(--transition-fast); }
+.news-link:hover { color: var(--green-800); gap: var(--space-3); }
+.news-link svg { transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); flex-shrink: 0; }
+.news-link:hover svg { transform: translateX(5px); }
+@media (max-width: 900px) { .news-grid { grid-template-columns: 1fr; max-width: 600px; } .news-card--featured { grid-row: auto; } }
+
+.contact { background-color: var(--white); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-20); align-items: start; }
+.contact-intro { font-size: var(--text-lg); color: var(--text-mid); line-height: 1.75; margin-bottom: var(--space-10); font-weight: 300; }
+.contact-details { display: flex; flex-direction: column; gap: var(--space-6); margin-bottom: var(--space-10); }
+.contact-item { display: flex; gap: var(--space-4); align-items: flex-start; transition: transform 0.25s ease; cursor: default; }
+.contact-item:has(.contact-value--link) { cursor: pointer; }
+.contact-item:hover { transform: translateX(4px); }
+.contact-icon { width: 44px; height: 44px; background-color: var(--green-50); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--green-600); flex-shrink: 0; border: 1px solid var(--green-100); }
+.contact-label { display: block; font-size: var(--text-xs); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-soft); margin-bottom: 3px; }
+.contact-value { display: block; font-size: var(--text-base); color: var(--text); line-height: 1.5; }
+.contact-value--link { color: var(--green-600); font-weight: 500; transition: color var(--transition-fast); }
+.contact-value--link:hover { color: var(--green-800); }
+.contact-map { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-md); }
+.contact-map iframe { display: block; width: 100%; }
+@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: var(--space-12); } }
+
+.contact-form-wrap { background-color: var(--beige-50); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: var(--space-10); }
+.form-title { font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 500; color: var(--green-800); margin-bottom: var(--space-8); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+.form-group { display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-5); }
+.form-label { font-size: var(--text-sm); font-weight: 500; color: var(--text); letter-spacing: 0.01em; }
+.required { color: var(--green-600); }
+.form-input {
+  width: 100%; padding: 0.75rem 1rem; font-family: var(--font-body); font-size: var(--text-base);
+  color: var(--text); background-color: var(--white); border: 1.5px solid var(--border);
+  border-radius: var(--radius-md); min-height: 48px; appearance: none; -webkit-appearance: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.form-input::placeholder { color: var(--text-soft); }
+.form-input:focus { border-color: var(--green-500); box-shadow: 0 0 0 3px rgba(51,102,80,0.12); outline: none; transform: translateY(-1px); transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease; }
+.form-input.is-error { border-color: #c0392b; }
+.form-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23787878' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 40px; cursor: pointer; }
+.form-textarea { min-height: 140px; resize: vertical; line-height: 1.6; }
+.form-error { font-size: var(--text-xs); color: #c0392b; font-weight: 500; min-height: 16px; }
+.form-success { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4) var(--space-5); background-color: var(--green-50); border: 1px solid var(--green-100); border-radius: var(--radius-md); color: var(--green-700); font-size: var(--text-sm); font-weight: 500; margin-top: var(--space-4); }
+.form-success[hidden] { display: none; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } .contact-form-wrap { padding: var(--space-6); } }
+
+.site-footer { background-color: var(--green-900); padding: var(--space-16) 0 var(--space-10); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: var(--space-12); padding-bottom: var(--space-12); border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: var(--space-8); }
+.footer-logo { font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--white); display: block; margin-bottom: var(--space-4); letter-spacing: -0.01em; }
+.footer-tagline { font-size: var(--text-sm); color: rgba(255,255,255,0.45); line-height: 1.7; }
+.footer-nav-title { display: block; font-size: var(--text-xs); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: var(--space-5); }
+.footer-nav ul, .footer-contact address { display: flex; flex-direction: column; gap: var(--space-3); }
+.footer-nav a, .footer-contact a { position: relative; display: inline-block; font-size: var(--text-sm); color: rgba(255,255,255,0.6); transition: color var(--transition-fast); }
+.footer-nav a:hover, .footer-contact a:hover { color: var(--white); }
+.footer-nav a::after, .footer-contact a::after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 1px; background-color: rgba(255,255,255,0.5); transform: scaleX(0); transform-origin: left; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.footer-nav a:hover::after, .footer-contact a:hover::after { transform: scaleX(1); }
+.footer-contact p { font-size: var(--text-sm); color: rgba(255,255,255,0.6); line-height: 1.6; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; }
+.footer-legal { font-size: var(--text-xs); color: rgba(255,255,255,0.3); }
+@media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: var(--space-10); } }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
+
+/* ===== BUTTONS — Shimmer ===== */
+.btn--primary { position: relative; overflow: hidden; z-index: 0; }
+.btn--primary::before { content: ''; position: absolute; top: 0; left: -100%; width: 70%; height: 100%; background: linear-gradient(105deg, transparent 0%, rgba(255,255,255,0.10) 50%, transparent 100%); transition: left 0.55s cubic-bezier(0.4, 0, 0.2, 1); pointer-events: none; z-index: 1; }
+.btn--primary:hover::before { left: 130%; }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(30,58,47,0.35); }
+.btn--primary:active { transform: translateY(0); box-shadow: none; }
+.btn--ghost:hover { transform: translateY(-2px); }
+.btn--ghost:active { transform: translateY(0); }
+
+/* ===== SECTION TITLE em gradient ===== */
+.section-title em { background: linear-gradient(135deg, var(--green-600) 0%, var(--green-400) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+/* ===== GLOBAL CURSOR ===== */
+a, button, [role="button"], .news-card, .mission-card, .service-card { cursor: pointer; }
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  .btn--primary::before, .mission-card::after, .service-card::after,
+  .footer-nav a::after, .footer-contact a::after,
+  .site-header.scrolled .nav-link:not(.nav-link--cta)::after { display: none; }
+  .mission-icon, .service-icon, .contact-item, .value-pill, .btn--primary, .btn--ghost, .form-input { transition: none !important; }
+  .about-image-overlay { display: none; }
+}
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#accueil" class="nav-logo" aria-label="Alliance Rurale — Retour à l'accueil">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12 12-5.373 12-12S20.627 2 14 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M14 8v6M14 14l4 4M14 14l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M8 12c0 0 2-4 6-4s6 4 6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-main">Alliance Rurale</span>
+          <span class="logo-sub">Toulouse</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#accueil" class="nav-link">Accueil</a></li>
+        <li><a href="#a-propos" class="nav-link">À propos</a></li>
+        <li><a href="#actions" class="nav-link">Nos actions</a></li>
+        <li><a href="#actualites" class="nav-link">Actualités</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="accueil" class="hero" aria-label="Présentation Alliance Rurale">
+      <div class="hero-image" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80" alt="" loading="eager" width="1920" height="1080" class="hero-bg">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <div class="hero-badge">Organisation agricole · Haute-Garonne</div>
+        <h1 class="hero-title">
+          <span class="hero-line-wrap"><span class="hero-line">Le territoire,</span></span>
+          <span class="hero-line-wrap"><em class="hero-line">au cœur de chaque décision.</em></span>
+        </h1>
+        <p class="hero-description">
+          Alliance Rurale rassemble et défend les acteurs du monde agricole en Haute-Garonne.
+          Nous portons leurs intérêts auprès des institutions, accompagnons les exploitants
+          dans leurs démarches et contribuons au développement durable du territoire.
+        </p>
+        <div class="hero-actions">
+          <a href="#actions" class="btn btn--primary">Découvrir nos actions</a>
+          <a href="#contact" class="btn btn--ghost">Nous contacter</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Défiler</span>
+      </div>
+    </section>
+
+    <!-- ===== CHIFFRES ===== -->
+    <section class="strip" aria-label="Chiffres clés">
+      <div class="container">
+        <div class="strip-grid">
+          <div class="strip-item">
+            <span class="strip-number">24<small>h</small>/24</span>
+            <span class="strip-label">Disponibilité</span>
+          </div>
+          <div class="strip-divider" aria-hidden="true"></div>
+          <div class="strip-item">
+            <span class="strip-number">Toulouse</span>
+            <span class="strip-label">109 avenue de Lespinet</span>
+          </div>
+          <div class="strip-divider" aria-hidden="true"></div>
+          <div class="strip-item">
+            <span class="strip-number">Haute-Garonne</span>
+            <span class="strip-label">Territoire d'intervention</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="a-propos" class="about section" aria-label="À propos d'Alliance Rurale">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap reveal">
+            <div class="about-image">
+              <div class="about-image-overlay" aria-hidden="true"></div>
+              <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80" alt="Paysage agricole de la région toulousaine" loading="lazy" width="900" height="620">
+            </div>
+            <div class="about-image-caption">Plaine du Lauragais — Haute-Garonne</div>
+          </div>
+          <div class="about-content">
+            <div class="section-label reveal">Notre organisation</div>
+            <h2 class="section-title reveal reveal--delay-1">
+              Une présence de terrain,<br>une voix portée plus haut.
+            </h2>
+            <p class="about-text reveal reveal--delay-2">
+              Alliance Rurale est née d'un constat simple : les agriculteurs de la région
+              toulousaine avaient besoin d'une structure à leur mesure, capable de les
+              représenter sans détour auprès des instances décisionnaires tout en restant
+              à leur côté au quotidien.
+            </p>
+            <p class="about-text reveal reveal--delay-2">
+              Implantée à Toulouse depuis sa création, notre organisation intervient sur
+              l'ensemble de la Haute-Garonne. Nous travaillons directement avec les
+              exploitants, les communes rurales et les acteurs institutionnels pour
+              construire des réponses adaptées aux réalités du terrain.
+            </p>
+            <p class="about-text reveal reveal--delay-2">
+              Notre indépendance est notre principal atout. Elle nous permet de
+              défendre les positions des agriculteurs avec clarté, sans compromis
+              né de conflits d'intérêts, et de nouer des partenariats équilibrés
+              avec l'ensemble des parties prenantes du monde rural.
+            </p>
+            <div class="about-values reveal reveal--delay-3">
+              <div class="value-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Indépendant
+              </div>
+              <div class="value-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Non-partisan
+              </div>
+              <div class="value-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                Disponible 24h/24
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MISSION ===== -->
+    <section class="mission section" aria-label="Mission et engagements">
+      <div class="container">
+        <div class="mission-header">
+          <div class="section-label reveal">Notre raison d'être</div>
+          <h2 class="section-title reveal reveal--delay-1">Trois engagements,<br>un seul territoire.</h2>
+        </div>
+        <div class="mission-grid">
+          <div class="mission-card reveal">
+            <div class="mission-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="mission-title">Ancrage territorial</h3>
+            <p class="mission-text">Nous sommes présents là où les décisions se prennent et là où elles s'appliquent. Notre connaissance fine du territoire nous permet d'agir avec précision, en tenant compte des spécificités locales de chaque exploitation et de chaque commune.</p>
+          </div>
+          <div class="mission-card reveal reveal--delay-1">
+            <div class="mission-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c-4.97 0-9-3.582-9-8 0-3.314 2.686-6 6-6 .732 0 1.434.132 2.08.374A5.99 5.99 0 0 1 15 6c3.314 0 6 2.686 6 6 0 4.418-4.03 8-9 8z"/><path d="M12 8V4M8 8V5M16 8V5"/></svg>
+            </div>
+            <h3 class="mission-title">Agriculture durable</h3>
+            <p class="mission-text">Nous ne posons pas la question de la durabilité contre celle de la viabilité économique. Nous travaillons à réconcilier les deux, en soutenant des pratiques agricoles qui permettent aux exploitations de traverser les décennies sans sacrifier leur rentabilité.</p>
+          </div>
+          <div class="mission-card reveal reveal--delay-2">
+            <div class="mission-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="mission-title">Représentation directe</h3>
+            <p class="mission-text">En commission départementale, en dialogue avec la préfecture ou devant les élus locaux, nous portons les positions des agriculteurs avec clarté. Pas de langage de bois : des arguments construits à partir de la réalité du terrain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACTIONS / SERVICES ===== -->
+    <section id="actions" class="services section" aria-label="Nos actions et services">
+      <div class="container">
+        <div class="services-header">
+          <div class="section-label reveal">Ce que nous faisons</div>
+          <h2 class="section-title reveal reveal--delay-1">Un accompagnement concret,<br>à chaque étape.</h2>
+          <p class="services-intro reveal reveal--delay-2">
+            Nos actions couvrent l'ensemble du cycle de vie d'une exploitation agricole,
+            de l'installation jusqu'à la transmission, en passant par les moments
+            de crise administrative, climatique ou économique.
+          </p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-number" aria-hidden="true">01</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="service-title">Accompagnement des exploitants</h3>
+            <p class="service-text">Déclarations PAC, demandes d'aides agricoles, contentieux fonciers, transmission d'exploitation — nous accompagnons les agriculteurs dans leurs démarches administratives et juridiques pour leur permettre de se concentrer sur ce qu'ils font le mieux.</p>
+            <ul class="service-list" role="list">
+              <li>Suivi des dossiers PAC et aides européennes</li>
+              <li>Appui juridique lors de litiges fonciers</li>
+              <li>Conseil pour la transmission et la reprise d'exploitation</li>
+              <li>Orientation vers les dispositifs d'urgence agricole</li>
+            </ul>
+          </article>
+          <article class="service-card reveal reveal--delay-1">
+            <div class="service-number" aria-hidden="true">02</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3 class="service-title">Représentation institutionnelle</h3>
+            <p class="service-text">Nous siégeons dans les instances où se décide l'avenir du monde rural : commissions départementales, groupes de travail interministériels, concertations avec les collectivités. La voix des agriculteurs de Haute-Garonne est portée avec méthode et constance.</p>
+            <ul class="service-list" role="list">
+              <li>Participation aux commissions départementales agricoles</li>
+              <li>Dialogue avec les élus locaux et la préfecture</li>
+              <li>Suivi des politiques agricoles régionales et nationales</li>
+              <li>Coordination avec les chambres d'agriculture</li>
+            </ul>
+          </article>
+          <article class="service-card reveal reveal--delay-2">
+            <div class="service-number" aria-hidden="true">03</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </div>
+            <h3 class="service-title">Développement du territoire rural</h3>
+            <p class="service-text">Le développement rural ne se résume pas aux seules exploitations. Nous animons des réseaux d'entraide entre agriculteurs, soutenons les initiatives de circuits courts et participons à la valorisation du patrimoine agricole local.</p>
+            <ul class="service-list" role="list">
+              <li>Animation de réseaux d'entraide entre exploitations</li>
+              <li>Soutien aux projets de circuits courts et vente directe</li>
+              <li>Participation aux contrats de développement rural</li>
+              <li>Valorisation des savoir-faire agricoles régionaux</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACTUALITÉS ===== -->
+    <section id="actualites" class="news section" aria-label="Actualités et initiatives">
+      <div class="container">
+        <div class="news-header">
+          <div class="section-label reveal">Actualités</div>
+          <h2 class="section-title reveal reveal--delay-1">Ce qui se passe<br>sur le terrain.</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card news-card--featured reveal">
+            <div class="news-image">
+              <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=800&q=80" alt="Champ de céréales en Haute-Garonne lors de la moisson 2024" loading="lazy" width="800" height="500">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="news-category">Conjoncture</span>
+                <time datetime="2024-09-12" class="news-date">12 septembre 2024</time>
+              </div>
+              <h3 class="news-title">Moisson 2024 en Haute-Garonne : une campagne contrastée selon les zones</h3>
+              <p class="news-excerpt">La sécheresse printanière a pesé sur les rendements en céréales dans la plaine lauragaise, tandis que les exploitations irriguées du nord du département ont tiré leur épingle du jeu. Alliance Rurale a transmis une synthèse aux services de l'État pour orienter l'activation des dispositifs de soutien.</p>
+              <a href="#actualites" class="news-link" aria-label="Lire l'article complet sur la moisson 2024">
+                Lire la suite
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="news-card reveal reveal--delay-1">
+            <div class="news-image">
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80" alt="Réunion de travail sur l'agrivoltaïsme avec des agriculteurs" loading="lazy" width="600" height="400">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="news-category">Énergie</span>
+                <time datetime="2024-07-03" class="news-date">3 juillet 2024</time>
+              </div>
+              <h3 class="news-title">Agrivoltaïsme : nos positions portées devant la commission départementale</h3>
+              <p class="news-excerpt">Lors de la réunion du 27 juin, nous avons défendu une doctrine d'implantation stricte des panneaux solaires en milieu agricole, pour que le foncier reste d'abord au service de la production alimentaire.</p>
+              <a href="#actualites" class="news-link" aria-label="Lire l'article sur l'agrivoltaïsme">
+                Lire la suite
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="news-card reveal reveal--delay-2">
+            <div class="news-image">
+              <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80" alt="Journée de terrain avec des exploitants agricoles" loading="lazy" width="600" height="400">
+            </div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="news-category">Événement</span>
+                <time datetime="2024-03-15" class="news-date">15 mars 2024</time>
+              </div>
+              <h3 class="news-title">Journée terrain : rotation des cultures et gestion des intrants</h3>
+              <p class="news-excerpt">Une vingtaine d'exploitants de la région se sont retrouvés pour échanger sur leurs pratiques de rotation des cultures. Une journée concrète, sans discours, qui a abouti à la mise en place d'un groupe de suivi trimestriel.</p>
+              <a href="#actualites" class="news-link" aria-label="Lire l'article sur la journée terrain">
+                Lire la suite
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section" aria-label="Contact et coordonnées">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="section-label reveal">Nous joindre</div>
+            <h2 class="section-title reveal reveal--delay-1">Une question ?<br>Nous sommes disponibles.</h2>
+            <p class="contact-intro reveal reveal--delay-2">
+              Que vous soyez exploitant, élu local, partenaire institutionnel
+              ou simplement curieux de nos activités, n'hésitez pas à nous
+              contacter. Nous répondons à toutes les sollicitations.
+            </p>
+            <address class="contact-details reveal reveal--delay-3">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Adresse</span>
+                  <span class="contact-value">109 Avenue de Lespinet<br>31400 Toulouse</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.4a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Téléphone</span>
+                  <a href="tel:+33645440397" class="contact-value contact-value--link">06 45 44 03 97</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Disponibilité</span>
+                  <span class="contact-value">Ouvert 24h/24, 7j/7</span>
+                </div>
+              </div>
+            </address>
+            <div class="contact-map reveal reveal--delay-4">
+              <iframe src="https://maps.google.com/maps?q=109+Avenue+de+Lespinet,+31400+Toulouse&output=embed&z=15" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Alliance Rurale — 109 Avenue de Lespinet, 31400 Toulouse"></iframe>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal reveal--delay-2">
+            <form class="contact-form" id="contact-form" novalidate>
+              <h3 class="form-title">Envoyer un message</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="field-name" class="form-label">Nom complet <span class="required" aria-label="requis">*</span></label>
+                  <input type="text" id="field-name" name="name" class="form-input" autocomplete="name" required aria-required="true" placeholder="Jean Dupont">
+                  <span class="form-error" id="error-name" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="field-email" class="form-label">Adresse email <span class="required" aria-label="requis">*</span></label>
+                  <input type="email" id="field-email" name="email" class="form-input" autocomplete="email" required aria-required="true" placeholder="jean.dupont@exemple.fr">
+                  <span class="form-error" id="error-email" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="field-subject" class="form-label">Objet</label>
+                <select id="field-subject" name="subject" class="form-input form-select">
+                  <option value="">Sélectionner un objet</option>
+                  <option value="accompagnement">Accompagnement administratif</option>
+                  <option value="representation">Représentation institutionnelle</option>
+                  <option value="territoire">Développement territorial</option>
+                  <option value="partenariat">Partenariat ou convention</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="field-message" class="form-label">Message <span class="required" aria-label="requis">*</span></label>
+                <textarea id="field-message" name="message" class="form-input form-textarea" rows="5" required aria-required="true" placeholder="Décrivez votre situation ou votre question..."></textarea>
+                <span class="form-error" id="error-message" role="alert" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                <span class="btn-text">Envoyer le message</span>
+                <span class="btn-loader" aria-hidden="true"></span>
+              </button>
+              <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Message envoyé. Nous vous répondrons dans les plus brefs délais.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#accueil" class="footer-logo" aria-label="Alliance Rurale — Retour en haut">Alliance Rurale</a>
+          <p class="footer-tagline">Organisation agricole indépendante<br>Haute-Garonne — Toulouse</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navigation secondaire">
+          <span class="footer-nav-title">Navigation</span>
+          <ul role="list">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#actions">Nos actions</a></li>
+            <li><a href="#actualites">Actualités</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <span class="footer-nav-title">Contact</span>
+          <address>
+            <p>109 Avenue de Lespinet<br>31400 Toulouse</p>
+            <p><a href="tel:+33645440397">06 45 44 03 97</a></p>
+            <p>Disponible 24h/24</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">&copy; <span id="current-year"></span> Alliance Rurale. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+  <script>
+'use strict';
+
+const $ = (sel, ctx = document) => ctx.querySelector(sel);
+const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
+const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function initHeaderScroll() {
+  const header = $('#site-header');
+  if (!header) return;
+  const update = () => header.classList.toggle('scrolled', window.scrollY > 56);
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+}
+
+function initMobileNav() {
+  const toggle = $('#nav-toggle'), menu = $('#nav-menu');
+  if (!toggle || !menu) return;
+  const open = () => { menu.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Fermer le menu'); document.body.style.overflow = 'hidden'; };
+  const close = () => { menu.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Ouvrir le menu'); document.body.style.overflow = ''; };
+  toggle.addEventListener('click', () => menu.classList.contains('is-open') ? close() : open());
+  $$('.nav-link', menu).forEach(l => l.addEventListener('click', close));
+  document.addEventListener('click', e => { if (menu.classList.contains('is-open') && !menu.contains(e.target) && !toggle.contains(e.target)) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && menu.classList.contains('is-open')) { close(); toggle.focus(); } });
+}
+
+function initSmoothScroll() {
+  $$('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const id = link.getAttribute('href');
+      if (id === '#') return;
+      const target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' });
+    });
+  });
+}
+
+function initScrollSpy() {
+  const sections = $$('section[id], .hero[id]'), links = $$('.nav-link[href^="#"]');
+  if (!sections.length || !links.length) return;
+  const update = () => {
+    const pos = window.scrollY + 100;
+    let activeId = null;
+    sections.forEach(s => { if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) activeId = s.id; });
+    links.forEach(l => l.classList.toggle('is-active', l.getAttribute('href').slice(1) === activeId));
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}
+
+function initContactForm() {
+  const form = $('#contact-form'), submitBtn = $('#submit-btn'), success = $('#form-success');
+  if (!form) return;
+  const validators = {
+    name:    { fn: v => v.trim().length >= 2,                          msg: 'Veuillez indiquer votre nom complet.' },
+    email:   { fn: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()), msg: 'Veuillez saisir une adresse email valide.' },
+    message: { fn: v => v.trim().length >= 10,                         msg: 'Votre message doit contenir au moins 10 caractères.' },
+  };
+  const validate = name => {
+    const field = form.querySelector(`[name="${name}"]`), error = $(`#error-${name}`);
+    if (!field || !error || !validators[name]) return true;
+    const ok = validators[name].fn(field.value);
+    error.textContent = ok ? '' : validators[name].msg;
+    field.classList.toggle('is-error', !ok);
+    field.setAttribute('aria-invalid', !ok);
+    return ok;
+  };
+  Object.keys(validators).forEach(name => {
+    const field = form.querySelector(`[name="${name}"]`);
+    if (!field) return;
+    field.addEventListener('blur', () => validate(name));
+    field.addEventListener('input', () => { if (field.classList.contains('is-error')) validate(name); });
+  });
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const valid = Object.keys(validators).map(validate);
+    if (valid.some(v => !v)) { const f = form.querySelector('.is-error'); if (f) f.focus(); return; }
+    submitBtn.classList.add('loading'); submitBtn.disabled = true;
+    await new Promise(r => setTimeout(r, 1200));
+    submitBtn.classList.remove('loading'); submitBtn.disabled = false;
+    form.reset(); success.hidden = false; success.focus();
+    setTimeout(() => { success.hidden = true; }, 6000);
+  });
+}
+
+function initYear() { const el = $('#current-year'); if (el) el.textContent = new Date().getFullYear(); }
+
+function initImageFallbacks() {
+  $$('img').forEach(img => {
+    img.addEventListener('error', function () {
+      const p = this.closest('.hero-image, .about-image, .news-image');
+      if (p) { p.style.backgroundColor = '#1E3A2F'; p.style.minHeight = '300px'; }
+      this.style.display = 'none';
+    });
+  });
+}
+
+function initGSAP() {
+  if (typeof gsap === 'undefined') { $$('.reveal').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; }); return; }
+  gsap.registerPlugin(ScrollTrigger);
+
+  if (REDUCED_MOTION) {
+    gsap.set('.reveal, .hero-badge, .hero-description, .hero-actions, .hero-scroll-indicator', { opacity: 1, y: 0, clearProps: 'all' });
+    gsap.set('.hero-line', { y: 0, opacity: 1 });
+    gsap.set('.about-image-overlay', { scaleX: 0 });
+    $$('.strip-item').forEach(el => { el.style.opacity = '1'; });
+    return;
+  }
+
+  /* Hero entrance */
+  gsap.timeline({ delay: 0.15, defaults: { ease: 'power3.out' } })
+    .from('.hero-badge', { opacity: 0, y: 14, duration: 0.85 })
+    .from('.hero-line', { y: '108%', opacity: 0, duration: 1.15, stagger: 0.16, ease: 'power4.out' }, '-=0.5')
+    .from('.hero-description', { opacity: 0, y: 22, duration: 1.0 }, '-=0.65')
+    .from('.hero-actions .btn', { opacity: 0, y: 16, duration: 0.8, stagger: 0.12 }, '-=0.6')
+    .from('.hero-scroll-indicator', { opacity: 0, duration: 1.0, ease: 'power2.out' }, '-=0.4');
+
+  /* Hero parallax */
+  gsap.to('.hero-bg', { yPercent: 24, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.8 } });
+  gsap.to('.hero-content', { opacity: 0, y: -50, ease: 'none', scrollTrigger: { trigger: '.hero', start: '55% top', end: 'bottom top', scrub: 1 } });
+  gsap.to('.hero-scroll-indicator', { opacity: 0, ease: 'none', scrollTrigger: { trigger: '.hero', start: '15% top', end: '35% top', scrub: 1 } });
+
+  /* Strip */
+  gsap.from('.strip-item', { opacity: 0, y: 28, stagger: 0.14, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: '.strip', start: 'top 82%' } });
+  gsap.from('.strip-divider', { scaleY: 0, transformOrigin: 'center top', stagger: 0.1, duration: 0.6, ease: 'power2.out', scrollTrigger: { trigger: '.strip', start: 'top 82%' } });
+
+  /* About image wipe */
+  const overlay = $('.about-image-overlay');
+  if (overlay) gsap.to(overlay, { scaleX: 0, transformOrigin: 'right center', duration: 1.45, ease: 'expo.inOut', scrollTrigger: { trigger: '.about-image', start: 'top 76%' } });
+  gsap.from('.about-image img', { scale: 1.1, duration: 1.6, ease: 'power3.out', scrollTrigger: { trigger: '.about-image', start: 'top 76%' } });
+  gsap.to('.about-image img', { yPercent: -9, ease: 'none', scrollTrigger: { trigger: '.about', start: 'top bottom', end: 'bottom top', scrub: 1.5 } });
+
+  /* Cards stagger */
+  gsap.from('.mission-card', { opacity: 0, y: 52, stagger: 0.15, duration: 1.0, ease: 'power3.out', scrollTrigger: { trigger: '.mission-grid', start: 'top 80%' } });
+  gsap.from('.service-card', { opacity: 0, y: 48, stagger: 0.12, duration: 1.0, ease: 'power3.out', scrollTrigger: { trigger: '.services-grid', start: 'top 80%' } });
+  gsap.from('.news-card', { opacity: 0, y: 48, stagger: 0.12, duration: 1.0, ease: 'power3.out', scrollTrigger: { trigger: '.news-grid', start: 'top 80%' } });
+
+  /* News image parallax */
+  $$('.news-image img').forEach(img => {
+    gsap.to(img, { yPercent: -12, ease: 'none', scrollTrigger: { trigger: img.closest('.news-card'), start: 'top bottom', end: 'bottom top', scrub: 1.5 } });
+  });
+
+  /* Generic reveals (exclude cards/strip handled above) */
+  const handled = new Set([...$$('.mission-card'), ...$$('.service-card'), ...$$('.news-card'), ...$$('.strip-item'), ...$$('.strip-divider')]);
+  $$('.reveal').forEach(el => {
+    if (handled.has(el)) return;
+    gsap.fromTo(el, { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: 1.0, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 88%' } });
+  });
+
+  /* Contact items */
+  gsap.from('.contact-item', { opacity: 0, x: -20, stagger: 0.12, duration: 0.85, ease: 'power3.out', scrollTrigger: { trigger: '.contact-details', start: 'top 84%' } });
+
+  /* Section labels */
+  $$('.section-label').forEach(el => {
+    gsap.from(el, { opacity: 0, x: -12, duration: 0.7, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%' } });
+  });
+
+  /* Footer */
+  gsap.from('.footer-grid > *', { opacity: 0, y: 24, stagger: 0.1, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: '.footer-grid', start: 'top 90%' } });
+
+  /* Services header */
+  gsap.from('.services-header .section-title', { opacity: 0, y: 36, duration: 1.1, ease: 'power3.out', scrollTrigger: { trigger: '.services-header', start: 'top 82%' } });
+  gsap.from('.services-intro', { opacity: 0, y: 24, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: '.services-header', start: 'top 80%' } });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initHeaderScroll();
+  initMobileNav();
+  initSmoothScroll();
+  initScrollSpy();
+  initContactForm();
+  initYear();
+  initImageFallbacks();
+  initGSAP();
+});
+  </script>
+</body>
+</html>
+</html>
